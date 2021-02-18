@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ShashankPortfolio": {
+    "Personal-Portfolio-Angular": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ShashankPortfolio",
+            "outputPath": "dist/Personal-Portfolio-Angular",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -30,9 +30,7 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": [
-              "./node_modules/angular-dark-mode/angular-dark-mode.js"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -68,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ShashankPortfolio:build"
+            "browserTarget": "Personal-Portfolio-Angular:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ShashankPortfolio:build:production"
+              "browserTarget": "Personal-Portfolio-Angular:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ShashankPortfolio:build"
+            "browserTarget": "Personal-Portfolio-Angular:build"
           }
         },
         "test": {
@@ -96,9 +94,7 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": [
-              "./node_modules/angular-dark-mode/angular-dark-mode.js"
-            ]
+            "scripts": []
           }
         },
         "lint": {
@@ -118,11 +114,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "ShashankPortfolio:serve"
+            "devServerTarget": "Personal-Portfolio-Angular:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "ShashankPortfolio:serve:production"
+              "devServerTarget": "Personal-Portfolio-Angular:serve:production"
             }
           }
         },
@@ -133,7 +129,7 @@
       }
     }
   },
-  "defaultProject": "ShashankPortfolio",
+  "defaultProject": "Personal-Portfolio-Angular",
   "cli": {
     "analytics": "d5d9f68b-dce0-4de7-a15e-56e2bbd99b5e"
   }
